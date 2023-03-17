@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import { Button } from 'antd'
+
+import {  RouterProvider } from 'react-router-dom'
+import router from './router'
 import 'antd/dist/reset.css'
-import ReadExcel from './page/ReadExcel'
 
 function App() {
 
   return (
-    <div>
-      <Button type="primary">Button</Button>
-      <ReadExcel />
-    </div>
+    <RouterProvider router={router} />
   )
 }
 

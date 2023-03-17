@@ -17,9 +17,9 @@ const ReadExcel = () => {
       const data = new Uint8Array(event.target!.result as ArrayBufferLike)
       const workbook = read(data, {type: 'array'})
       const worksheet = workbook.Sheets[workbook.SheetNames[0]]
-      const jsonData = utils.sheet_to_json(worksheet, {header:1})
+      const jsonData = utils.sheet_to_json(worksheet, {header: 1})
       console.log(jsonData)
-    };
+    }
     reader.readAsArrayBuffer(file)
   }
 
