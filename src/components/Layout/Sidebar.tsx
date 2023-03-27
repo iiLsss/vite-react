@@ -12,7 +12,7 @@ const Sidebar = () => {
           SideBarRoutes.map(item => (
             <li>
               <NavLink to={item.path}>
-                滴滴滴大大
+                {item.title}
               </NavLink>
             </li>
           ))
